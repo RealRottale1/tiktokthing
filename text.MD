@@ -25,7 +25,7 @@
 ---
 
 ### Test Case TC_UPLOAD_001
-**Title:** 286MB File Size  
+**Title:**Allows 286MB File Size  
 **Requirement:** Must allow 286MB file size  
 **Test Type:** Positive  
 
@@ -69,7 +69,7 @@
 ---
 
 ### Test Case TC_UPLOAD_003
-**Title:** Less Than 3 Seconds  
+**Title:**Prohibits Less Than 3 Seconds  
 **Requirement:** Must not allow content shorter than 3 seconds  
 **Test Type:** Negative  
 
@@ -113,7 +113,7 @@
 ---
 
 ### Test Case TC_UPLOAD_005
-**Title:** 4-Second Video  
+**Title:**Allows 4-Second Video  
 **Requirement:** Must allow 4-second content  
 **Test Type:** Edge Case  
 
@@ -135,7 +135,7 @@
 ---
 
 ### Test Case TC_UPLOAD_006
-**Title:** More Than 10-Minute Video  
+**Title:**Prohibits More Than 10-Minute Video  
 **Requirement:** Must not allow videos longer than 10 minutes  
 **Test Type:** Black Box  
 
@@ -178,7 +178,7 @@
 ---
 
 ### Test Case TC_UPLOAD_008
-**Title:** 10-Minute Video  
+**Title:**Allows 10-Minute Video  
 **Requirement:** Must allow 10-minute content  
 **Test Type:** Boundary  
 
@@ -200,7 +200,7 @@
 ---
 
 ### Test Case TC_UPLOAD_009
-**Title:** 3-Second Video  
+**Title:**Allows 3-Second Video  
 **Requirement:** Must allow 3-second content  
 **Test Type:** Boundary  
 
