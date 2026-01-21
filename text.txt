@@ -1,0 +1,109 @@
+
+Test Case ID: TC_UPLOAD_000
+Title: Allows MP4 File
+Requirement: Must allow MP4 File
+Test Type: Positive
+Preconditions: Logged In, valid video file
+Test Steps: attempting to upload a file
+Test Data: MP4 File
+Expected Result: Pass. It allows MP4 files to be submited
+Priority: Medium
+
+Test Case ID: TC_UPLOAD_001
+Title: 286MB File Size
+Requirement: Must allow 286MB File size
+Test Type: Positive
+Preconditions: Logged In, valid video file
+Test Steps: attempting to upload a file
+Test Data: 286MB Valid file
+Expected Result: Pass. Files of 286MB are allowed
+Priority: Medium
+
+---
+
+Test Case ID: TC_UPLOAD_002
+Title: Prohibits JPG File
+Requirement: Must not allow JPG File
+Test Type: Negative
+Preconditions: Logged In, valid image file
+Test Steps: attempting to upload a file
+Test Data: JPG File
+Expected Result: False. JPG Files are not allowed to be submited
+Priority: Medium
+
+Test Case ID: TC_UPLOAD_003
+Title: Less than 3 seconds
+Requirement: Must not allow 3 second content
+Test Type: Negative
+Preconditions: Logged In, valid video file
+Test Steps: attempting to upload a file
+Test Data: 2 second valid video file
+Expected Result: Fail. Videos of less than 3 seconds are not allowed
+Priority: Medium
+
+---
+
+Test Case ID: TC_UPLOAD_004
+Title: Prohibits Empty Submission
+Requirement: Must not allow empty content
+Test Type: Edge Case
+Preconditions: Logged In, no video file
+Test Steps: attempting to nothing as a file
+Test Data: No File
+Expected Result: False. A file is required to submit content
+Priority: Medium
+
+Test Case ID: TC_UPLOAD_005
+Title: 4 second video
+Requirement: Must allow 4 second content
+Test Type: Edge Case
+Preconditions: Logged In, valid video file
+Test Steps: attempting to upload a file
+Test Data: 4 second valid video file
+Expected Result: Pass. Videos of 4 seconds are allowed
+Priority: Medium
+
+---
+
+Test Case ID: TC_UPLOAD_006
+Title: more than 10 Minute video
+Requirement: Must not allow over 10 Minute content
+Test Type: Black Box
+Preconditions: Logged In, valid video file
+Test Steps: attempting to upload a file
+Test Data: 11 minute valid video file
+Expected Result: Fail. Videos of more than 10 minutes are not allowed
+Priority: high
+
+Test Case ID: TC_UPLOAD_007
+Title: Prohibits 2,201 Character Caption
+Requirement: Must not allow more than 2200 Character captions
+Test Type: Black Box
+Preconditions: Logged In
+Test Steps: attempting to set caption
+Test Data: 2,201 Character Caption
+Expected Result: False. Captions of over 2,200 Characters are not allowed
+Priority: Medium
+
+---
+
+Test Case ID: TC_UPLOAD_008
+Title: 10 Minute video
+Requirement: Must allow 10 minute content
+Test Type: Boundary
+Preconditions: Logged In, valid file
+Test Steps: attempting to upload a file
+Test Data: 10 minute valid video file
+Expected Result: Pass. Videos of 10 minutes are allowed
+Priority: Medium
+
+Test Case ID: TC_UPLOAD_009
+Title: 3 second videos
+Requirement: Must allow 3 second content
+Test Type: Boundary
+Preconditions: Logged In, valid file
+Test Steps: attempting to upload a file
+Test Data: 3 second valid video file
+Expected Result: Pass. Videos of 3 seconds are allowed
+Priority: Medium
+
